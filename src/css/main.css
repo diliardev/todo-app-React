@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EEEEEE;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #EEEEEE;
+}
+
+.header {
+    background-color: #393E46;
+    padding: 25px 50px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    width: 60%;
+    float: left;
+}
+
+aside {
+    width: 30%;
+    float: left;
+}
+
+main .lis {
+    margin-bottom: 25px;
+    background-color: rgba(0, 173, 181, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+main .lis:hover {
+    transform: scale(1.02);
+}
+
+main .delete-icon,
+main .edit-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: opacity 0.3s;
+}
+
+main .delete-icon {
+    right: 10px;
+    color: #ffe0e0;
+}
+
+main .edit-icon {
+    right: 40px;
+    color: #00ADB5;
+}
+
+main .delete-icon:hover,
+main .edit-icon:hover {
+    opacity: 0.7;
+}
+
+aside form input,
+aside form textarea,
+aside form button {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00ADB5;
+    border-radius: 8px;
+    background: #EEEEEE;
+    color: #EEEEEE;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    outline: none;
+    float: left;
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+aside form input:focus,
+aside form textarea:focus {
+    background: #7e7e7e;
+    border-color: #00ADB5;
+    transform: scale(1.02);
+}
+
+aside form button {
+    background: #00ADB5;
+    border: none;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+aside form button:hover {
+    transform: scale(1.05);
+    background: #00CED1;
+}
+
+.container {
+    border: 1px solid red;
+}
+
+@media (max-width: 900px) {
+    main,
+    aside {
+        float: none;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .header {
+        padding: 20px;
+        font-size: 1.3rem;
+    }
+}
+
+
+
+.haupt {
+ float: left;
+ margin-top: 48px;
+}
+
+.neben {
+    float: left;
+    margin-left: 80px;
+    margin-top: 50px;
+}
