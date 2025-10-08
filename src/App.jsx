@@ -13,12 +13,12 @@ class App extends React.Component {
                 list: [
         {
             id:1,
-            firstname:"Diliar",
+            firstname:"Produkts",
             purchases: "Apple,banana,sweets "
         },
         {
             id:2,
-            firstname:"James",
+            firstname:"Technic",
             purchases: "Keyboard,mouse,sweets "
         }
     ]
